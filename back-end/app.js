@@ -1,13 +1,11 @@
 const express = require('express'); 
-
-const app = express(); 
-
+const bodyParser = require("body-parser");
 const path = require('path');
 
-
+//Déclaration des routes 
 const userRoutes = require('./routes/user')
 
-
+const app = express(); 
 
 app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');

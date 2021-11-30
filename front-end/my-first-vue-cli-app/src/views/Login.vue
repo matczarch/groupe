@@ -1,5 +1,7 @@
 <template>
+
   <div class="login">
+    <Dropdown />
     <Header/>
     <div class="contain">
         <h1> Se connecter </h1>
@@ -18,11 +20,13 @@
 <script>
 // @ is an alias to /src
 import Header from '@/components/Header.vue'
+import Dropdown from '@/components/Dropdown.vue'
 
 export default {
   name: 'Login',
   components: {
-    Header
+    Header,
+    Dropdown, 
   }
 }
 </script>
